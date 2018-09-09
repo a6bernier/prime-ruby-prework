@@ -1,7 +1,3 @@
 def prime?(int)
-  if int == prime(int)
-    puts true 
-  else
-    puts false 
-  end
+  ('1' * self) !~ /^1?$|^(11+?)\1+$/
 end
