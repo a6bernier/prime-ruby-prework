@@ -1,7 +1,9 @@
-def prime?(int)
-  if ('1' * self) !~ /^1?$|^(11+?)\1+$/
-    puts "true"
+def prime?(integer)
+  if integer < 0 || integer == 0 || integer == 1 
+    return false
   else
-    puts "false"
+    (2..integer-1).to_a.all? do |possible|
+      integer % possible != 0 
+    end
   end
 end
